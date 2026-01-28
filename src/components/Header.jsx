@@ -22,10 +22,10 @@ const Header = () => {
 
                 <nav className="nav">
                     <ul className="nav-list">
+                        <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#contact" className="nav-cta">Booking</a></li>
+                        <li><a href="https://wa.me/254720692390?text=I'd like to book a consultation." target="_blank" rel="noopener noreferrer" className="nav-cta">Booking</a></li>
                     </ul>
                 </nav>
             </div>
