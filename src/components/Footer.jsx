@@ -1,24 +1,18 @@
 import React from 'react'
 import './Footer.css'
+import logo from '../assets/images/logo.jpg'
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="container footer-grid">
+            <div className="footer-container">
                 <div className="footer-col about">
-                    <h3 className="footer-logo">RIDGEWAYS<span>INTERIOR</span></h3>
+                    <a href="/" className="footer-logo-link">
+                        <img src={logo} alt="Ridgeways Interiors" className="footer-logo-img" />
+                    </a>
                     <p className="footer-about-text">
                         Premium window treatments and home accents in Nairobi.
                     </p>
-                    <p>Phone: <a href="https://wa.me/254720692390" target="_blank" rel="noopener noreferrer">+254 720 692 390</a></p>
-                    <p>Open: Mon - Sat, 8:00 AM - 6:00 PM</p>
-                    <div className="footer-links">
-                        <h4>Book a Service</h4>
-                        <ul>
-                            <li><a href="https://wa.me/254720692390?text=I'd like to book a measurement service" target="_blank" rel="noopener noreferrer">Request Measurement</a></li>
-                            <li><a href="https://wa.me/254720692390?text=I'd like to request a quote" target="_blank" rel="noopener noreferrer">Request a Quote</a></li>
-                        </ul>
-                    </div>
                 </div>
 
                 <div className="footer-col links">

@@ -15,14 +15,9 @@ const Header = () => {
     return (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container header-container">
-                <div className="logo">
-                    <a href="/">
-                        <div className="logo-wrapper">
-                            <span className="logo-text">RIDGEWAYS</span>
-                            <span className="logo-subtext">INTERIOR</span>
-                        </div>
-                    </a>
-                </div>
+                <a href="/" className="logo">
+                    <img src={logo} alt="Ridgeways Interiors" className="logo-img" />
+                </a>
 
                 <nav className="nav">
                     <ul className="nav-list">

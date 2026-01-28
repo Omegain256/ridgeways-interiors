@@ -26,6 +26,14 @@
     letter-spacing: 5px;
 }
 
+.footer-logo-img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-gold);
+}
+
 .footer-about-text {
     color: #999;
     line-height: 1.8;
