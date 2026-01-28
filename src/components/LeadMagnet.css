@@ -1,0 +1,87 @@
+.lead-magnet {
+    background-color: var(--color-off-white);
+}
+
+.lead-magnet-card {
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    padding: 10vw;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    box-shadow: none;
+}
+
+.lead-title {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.lead-text {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 3rem;
+    max-width: 400px;
+}
+
+.lead-form {
+    display: flex;
+    gap: 0;
+}
+
+.lead-form input {
+    flex: 1;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+}
+
+.lead-magnet-visual {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.pdf-mockup {
+    width: 200px;
+    height: 260px;
+    background: var(--color-charcoal);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 20px 20px 0 var(--color-gold);
+}
+
+.pdf-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.pdf-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+    .lead-magnet-card {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .lead-form {
+        flex-direction: column;
+    }
+}

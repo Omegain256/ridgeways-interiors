@@ -1,0 +1,105 @@
+:root {
+  --color-accent: #FF5A5F;
+  --color-charcoal: #1A1A1A;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4E8C1;
+  --color-white: #FFFFFF;
+  --color-off-white: #FBFAF8;
+  /* Slightly warmer off-white */
+  --color-grey-light: #F0F0F0;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-premium: 0 20px 40px rgba(0, 0, 0, 0.03);
+
+  /* Removed --container-max-width to go full-width */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color-off-white);
+  color: var(--color-charcoal);
+}
+
+h1,
+h2,
+h3,
+h4,
+.serif {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  /* Lighter weight for premium feel */
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  /* Forced full-width */
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border: none;
+  font-size: 0.8rem;
+  /* Smaller text with spacing looks more high-end */
+}
+
+.btn-primary {
+  background-color: var(--color-charcoal);
+  /* Switch to charcoal for a more modern look */
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold);
+  transform: translateY(-5px);
+}
+
+.btn-outline {
+  border: 1px solid var(--color-charcoal);
+  color: var(--color-charcoal);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.section-padding {
+  padding: 8rem 0;
+  /* More generous whitespace */
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}

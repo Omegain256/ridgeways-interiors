@@ -1,0 +1,14 @@
+.testimonials {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    transition: var(--transition-smooth);
+    background: white;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-premium);
+}

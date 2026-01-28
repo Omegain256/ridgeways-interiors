@@ -1,0 +1,56 @@
+.process {
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+}
+
+.process .section-title {
+    color: var(--color-white);
+}
+
+.process .section-subtitle {
+    color: #ccc;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 6rem;
+    margin-top: 6rem;
+}
+
+.process-item {
+    position: relative;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.process-number {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-gold);
+    letter-spacing: 5px;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+.process-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.process-text {
+    color: #999;
+    font-size: 0.85rem;
+    line-height: 2;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        gap: 4rem;
+    }
+}

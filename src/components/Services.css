@@ -1,0 +1,50 @@
+.services {
+    background-color: var(--color-off-white);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 4rem;
+}
+
+.service-card {
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    box-shadow: none;
+    transition: var(--transition-smooth);
+    border-bottom: 0;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.service-card-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-charcoal);
+    font-weight: 300;
+}
+
+.service-list {
+    text-align: left;
+    display: block;
+}
+
+.service-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+}
+
+.service-list li::before {
+    display: none;
+}
