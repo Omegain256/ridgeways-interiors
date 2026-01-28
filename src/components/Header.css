@@ -85,3 +85,18 @@
         /* Mobile menu can be added later */
     }
 }
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid var(--color-gold);
+    transition: var(--transition-smooth);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
+    border-color: var(--color-white);
+}
